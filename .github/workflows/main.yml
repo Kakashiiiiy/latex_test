@@ -5,9 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
-        run: git clone https://github.com/Kakashiiiiy/latex_test.git ; cd latex_test
+        run: git clone https://github.com/Kakashiiiiy/latex_test.git 
       - name: Init LFS
-        run: ls -la
+        run: cd latex_test
+      - name: Test
+        run:  ls -la
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@master
         with: 
