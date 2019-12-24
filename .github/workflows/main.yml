@@ -6,14 +6,6 @@ jobs:
     steps:
       - name: Git init
         run:  git clone https://Kakashiiiiy:${{ github.token }}@github.com/Kakashiiiiy/latex_test.git .
-      - name: print
-        run: du -sh Aufbau_1.png
-        
-        
-      - name: Set up Git repository
-        run: git clone https://github.com/Kakashiiiiy/latex_test.git .
-      - name: Test
-        run:  ls -la
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@master
         with: 
