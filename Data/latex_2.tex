@@ -81,9 +81,9 @@ RSA ist in der Praxis immernoch ein weit verbreitetes asymmetrisches Verschlüss
 In diesem Versuch arbeiten wir wieder an den Computern im Netzlabor. Es kommt ebenfalls wieder Ubuntu-Mate zum Einsatz. Entgegen der Versuchsbeschreibung nutzen wir Ubununtu 14.10 als Basis nicht Ubuntu 10.04. Uns wurden verschiendene Webapplikationen zur Verfügung gestellt. Uns steht unter \href{http://192.168.2.6/smartcard}{http://192.168.2.6/smartcard} die Möglichkeit zur Verfügung, Zahlen signieren zu lassen und gegebenenfalls einen Fehler bei der Rechnung zu veranlassen. Unter \href{http://192.168.1.6/bugattack}{http://192.168.1.6/bugattack} ist eine ähnliche Anwendung, aber ohne die Möglichkeit einen Fehler per klick selbst zu initiieren. Hier entsteht ein Fehler bei bestimmten Zahlen als Eingabeparameter.
 \begin{figure}[H]
   \centering
-  \subfloat[][]{\includegraphics[width=0.4\textwidth]{./Aufbau_1.png} }
+  \subfloat[][]{\includegraphics[width=0.4\textwidth]{../Aufbau_1.png} }
   \qquad
-  \subfloat[][]{\includegraphics[width=0.4\textwidth]{./Aufbau_2.png} }
+  \subfloat[][]{\includegraphics[width=0.4\textwidth]{../Aufbau_2.png} }
   \caption{Webapplikationen}
   \label{fig:1}
 \end{figure}
@@ -147,7 +147,7 @@ Die letzte Aufgabe dieses Versuchs ähnelt der vorherigen. So werden wir einen F
 n ist in unserem Fall 207703 und der öffentliche Schlüssel $e = 17$. Die Aufgabe war es nun ein geeignetes m zu finden, eines das $\mod{p}$ reduziert wird und $\mod{q}$ nicht reduziert wird. Wir ziehen die zweite Wurzel aus n und bekommen so eine Zahl heraus, die dies erfüllt, $207703^{\frac{1}{2}}=455.744$. Diese Zahl löst jedoch keine Fehler bei der Berechnung aus. Die letzten beiden Hexadezimalziffern müssen 0x4 und 0xb entsprechen. Dies entsprich in Binärdarstellung $00101011_2$ beziehungsweise $10110010_2$. Wir haben uns dafür entschieden die Zahl $1100101011_2$ zu nehmen, was 843 entspricht.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{3_2.png}
+\includegraphics[width=0.7\textwidth]{../3_2.png}
 \caption{Webapplikation Bug-Attack}
 \label{fig:2}
 \end{figure}
