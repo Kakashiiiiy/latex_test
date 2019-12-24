@@ -7,7 +7,7 @@ jobs:
       - name : install LFS
         run: sudo apt-get install -y git-lfs 
       - name: Set up Git repository
-        uses: actions/checkout@v1
+        run: git clone https://github.com/Kakashiiiiy/latex_test.git && cd latex_test
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@master
         with: 
