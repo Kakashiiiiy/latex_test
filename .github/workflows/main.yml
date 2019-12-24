@@ -5,9 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
-        run: git clone https://github.com/Kakashiiiiy/latex_test.git 
-      - name: Init LFS
-        run: cd latex_test
+        run: git clone https://github.com/Kakashiiiiy/latex_test.git .
       - name: Test
         run:  ls -la
       - name: Compile LaTeX document
