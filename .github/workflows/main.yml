@@ -8,9 +8,9 @@ jobs:
         uses: actions/checkout@v1
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@master
-        with:
+        with: 
           root_file: latex_2.tex
-      -name: Upload PDF 
+      - name: Upload PDF 
         uses:  actions/upload-artifact@v1
         with:
           name: Versuch9.pdf
