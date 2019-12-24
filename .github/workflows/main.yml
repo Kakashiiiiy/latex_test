@@ -4,6 +4,12 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
+      - name: test
+        uses:  actions/checkout@v1
+      - name: print
+        run: du -sh Aufbau_1.png
+        
+        
       - name: Set up Git repository
         run: git clone https://github.com/Kakashiiiiy/latex_test.git .
       - name: Test
@@ -18,3 +24,4 @@ jobs:
         with:
           name: data
           path: Data/latex_2.pdf
+      
