@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses:  actions/checkout@v1
-      - run: git clone ${{ GITHUB_WORKSPACE }}
+      - run: git fetch --prune --unshallow 
       - name: print
         run: du -sh Aufbau_1.png
         
