@@ -9,4 +9,5 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@master
         with:
-          root_file: Data/latex.tex
+          working_directory: Data 
+          root_file: latex.tex
