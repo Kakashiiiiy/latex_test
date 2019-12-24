@@ -10,3 +10,8 @@ jobs:
         uses: xu-cheng/latex-action@master
         with:
           root_file: latex_2.tex
+      -name: Upload PDF 
+        uses:  actions/upload-artifact@v1
+        with:
+          name: Versuch9.pdf
+          path: latex_2.pdf
