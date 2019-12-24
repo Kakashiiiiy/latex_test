@@ -5,16 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name : install LFS
-        run: sudo apt-get install -y git-lfs 
+        run: sudo apt-get install -y git-lfs ; sudo apt-get install -y texlive-full
       - name: Set up Git repository
         run: git clone https://github.com/Kakashiiiiy/latex_test.git 
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@master
-        with: 
-          working_directory : Data/
-          root_file: latex_2.tex
+        run: cd latex_test/Data ; pdflatex latex_2.tex 
       - name: Upload PDF 
         uses:  actions/upload-artifact@v1
         with:
           name: data
-          path: Data/latex_2.pdf
+          path: latex_test/Data/latex_2.pdf
