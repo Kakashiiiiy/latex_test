@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git init
-        run:  git clone https://Kakashiiiiy:${{ github.token }}@github.com/Kakashiiiiy/latex_test.git
+        run:  git clone https://Kakashiiiiy:${{ github.token }}@github.com/Kakashiiiiy/latex_test.git .
       - name: print
         run: du -sh Aufbau_1.png
         
