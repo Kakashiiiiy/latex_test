@@ -14,4 +14,5 @@ jobs:
       - name: Upload PDF 
         uses:  actions/upload-artifact@v1
         with:
+          name: data
           path: Data/latex_2.pdf
