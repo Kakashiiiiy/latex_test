@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: test
       - uses:  actions/checkout@v1
-      - run: git fetch --prune --unshallow 
+      - run: git clone $GITHUB_WORKSPACE
       - name: print
         run: du -sh Aufbau_1.png
         
